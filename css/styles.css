@@ -23,8 +23,15 @@ body {
   background-color: #ffffff;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*--header--*/
@@ -42,13 +49,6 @@ ul {
 }
 .header .container {
   display: flex;
-}
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-  /*justify-content: space-between;*/
 }
 
 /*navigation properties*/
@@ -91,8 +91,6 @@ ul {
 }
 
 .nav-list .link {
-  /*display: flex;
-  flex-direction: column;*/
   padding: 24px 0;
   letter-spacing: 0.02em;
   font-size: 16px;
@@ -152,7 +150,7 @@ ul {
 /*----------------- section-1 hero ----------------*/
 
 .hero-section {
-  max-width: 1158px;
+  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   background-color: #2e2f42;
@@ -293,7 +291,6 @@ ul {
 
 .our-team-title,
 .portfolio-title {
-  /*border: 2px solid #000003;*/
   margin-bottom: 72px;
   color: #2e2f42;
   font-size: 36px;
@@ -416,37 +413,21 @@ ul {
 .footer {
   padding: 100px 0;
   background-color: #2e2f42;
+  display: flex;
+  max-width: 1158px;
+  margin: 0 auto 0 auto;
+}
+.footer .container {
+  padding: 0;
 }
 
-.footer .text {
-  color: #ffffff;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
-
-.footer-link-logo-studio {
-  color: #404bbf;
-  color: #f4f4fd;
-}
-
-.footer-link-logo:hover {
-  color: #404bbf;
-}
-
-.footer-link-logo:focus {
-  color: #404bbf;
-}
-
-.footer-link-logo-studio {
-  color: #f4f4fd;
+.footer-container-logo {
+  max-width: 264px;
+  margin: 0 120px 0 156px;
 }
 
 .footer-link-logo {
   display: inline-block;
-
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -458,9 +439,25 @@ ul {
   margin-bottom: 16px;
 }
 
-.footer .text {
+.footer-link-logo-studio {
   color: #f4f4fd;
-  max-width: 264px;
+}
+
+.footer-link-logo:hover {
+  color: #404bbf;
+}
+
+.footer-link-logo:focus {
+  color: #404bbf;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .nav-list a,
@@ -468,6 +465,34 @@ ul {
 .button,
 .title-li {
   font-weight: 500;
+}
+
+.footer-container-media {
+  max-width: 208px;
+  margin: 0;
+}
+.footer-social-media {
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin: 0 0 16px 0;
+}
+.footer-social-list-link {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.footer-social-list-link-a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social-list-link-a:hover {
@@ -479,13 +504,13 @@ ul {
 }
 
 /**************  DELETE AFTER CHECK  ******************/
-.footer-social-media,
+/*.footer-social-media,
 .footer .container,
 .logo-disp {
   border: 2px solid #ffffff;
 }
 
-/*      find  it
+/*      find  it shit
 .our-team-social-links {
   width: 16px;
   height: 16px;
